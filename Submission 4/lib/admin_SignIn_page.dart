@@ -181,14 +181,14 @@ class JoinAsAdminPage extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: TextButton(
-                                // onPressed: () {
-                                //   signInWithEmailAndPassword(emailController.text, passwordController.text);
-                                // },
                                 onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => AdminLoginScreen()),
-                                  );                  },
+                                  signInWithEmailAndPassword(emailController.text, passwordController.text);
+                                },
+                                // onPressed: () {
+                                //   Navigator.push(
+                                //     context,
+                                //     MaterialPageRoute(builder: (context) => AdminLoginScreen()),
+                                //   );                  },
                                 child: Text(
                                   "Login",
                                   style: TextStyle(
